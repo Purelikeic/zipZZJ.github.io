@@ -1,11 +1,32 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="180" height="150" viewBox="0 0 180 150" role="img" aria-labelledby="title">
-  <title>北京开源芯片研究院标识</title>
-  <g transform="translate(34 8)">
-    <path d="M48 0h34l19 19v34L82 72H48L29 53V19z" fill="#1f2937"/>
-    <path d="M48 11h29l14 14v23L77 62H48L39 53V21z" fill="#f58220"/>
-    <path d="M52 22h9v28h-9zM67 22h9v28h-9z" fill="#fff"/>
-    <path d="M43 32h42v9H43z" fill="#fff"/>
-    <path d="M31 83h72v7H31z" fill="#f58220"/>
-    <text x="66" y="112" text-anchor="middle" fill="#1f2937" font-family="Arial,sans-serif" font-size="26" font-weight="800" letter-spacing="2">BOSC</text>
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 210" role="img" aria-labelledby="title desc">
+  <title id="title">BOSC</title>
+  <desc id="desc">Vector reconstruction of the BOSC logo from the provided OIP-C.jpeg reference.</desc>
+  <defs>
+    <linearGradient id="frame" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2b9fcb"/>
+      <stop offset=".48" stop-color="#25609b"/>
+      <stop offset="1" stop-color="#173f70"/>
+    </linearGradient>
+    <linearGradient id="word" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2b9fcb"/>
+      <stop offset=".52" stop-color="#225b98"/>
+      <stop offset=".76" stop-color="#e3a42c"/>
+      <stop offset="1" stop-color="#24598f"/>
+    </linearGradient>
+    <pattern id="circuits" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M2 3h8v5h5v8h7M20 2v6h-5M3 21v-6h7v-5" fill="none" stroke="#4fb5bd" stroke-opacity=".28" stroke-width="1.2"/>
+      <circle cx="2" cy="3" r="1.5" fill="#4fb5bd" fill-opacity=".3"/>
+      <circle cx="20" cy="2" r="1.5" fill="#4fb5bd" fill-opacity=".3"/>
+    </pattern>
+    <clipPath id="inner">
+      <rect x="55" y="22" width="110" height="106" rx="10"/>
+    </clipPath>
+  </defs>
+  <rect x="51" y="18" width="118" height="114" rx="11" fill="url(#frame)"/>
+  <rect x="57" y="24" width="106" height="102" rx="8" fill="#f8ffff"/>
+  <rect x="57" y="24" width="106" height="102" rx="8" fill="url(#circuits)" clip-path="url(#inner)"/>
+  <path d="M70 39h35a10 10 0 0 1 10 10v55a10 10 0 0 1-10 10H70a10 10 0 0 1-10-10V49a10 10 0 0 1 10-10Zm0 8a2 2 0 0 0-2 2v55a2 2 0 0 0 2 2h35a2 2 0 0 0 2-2V49a2 2 0 0 0-2-2Z" fill="#1b8f9b"/>
+  <path d="M127 39h24v8h-20a4 4 0 0 0-4 4v11a4 4 0 0 0 4 4h16a12 12 0 0 1 12 12v13a12 12 0 0 1-12 12h-20v-8h16a8 8 0 0 0 8-8V80a4 4 0 0 0-4-4h-16a12 12 0 0 1-12-12V51a12 12 0 0 1 12-12Z" fill="#1b8f9b"/>
+  <path d="M51 135h118" stroke="#1d5c98" stroke-width="4"/>
+  <text x="110" y="169" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="31" font-weight="700" letter-spacing="3" fill="url(#word)">BOSC</text>
 </svg>
