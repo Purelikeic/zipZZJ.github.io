@@ -29,12 +29,12 @@ const { toggleLocale, locale } = useLocale()
 				{{ $t('nav.home') }}
 			</v-btn>
 			<v-btn
-			to="/#card-publications"
+			to="/#card-experience"
 			class="mr-4"
 			prepend-icon="mdi-bookshelf"
 			:active="false"
 			>
-				{{ $t('nav.publications') }}
+				{{ $t('nav.experience') }}
 			</v-btn>
 			<v-btn
 			to="/#card-awards"

@@ -1,58 +1,44 @@
 import type { LocaleText } from '@/types/i18n'
 
 interface Experience {
-	title: LocaleText;
-	time: LocaleText;
-	img_path: string;
-	description: LocaleText;
-	link: LocaleText;
+  title: LocaleText
+  time: LocaleText
+  img_path: string
+  description: LocaleText
+  link: LocaleText
 }
 
 const experiences: Experience[] = [
-    {
-		title: {
-			en: "DeepSeek-AI",
-			zh: "深度求索（DeepSeek-AI）"
-		},
-		time: {
-			en: "2025.4 - current",
-			zh: "2025.4 - 至今"
-		},
-		img_path: "/experiences/deepseek.png",
-		description: {
-			en: `Working on <b>Machine Learning Systems (MLSys)</b> and <b>kernel design & optimization</b> at <a href="https://www.deepseek.com/">DeepSeek-AI</a> in Hangzhou, Zhejiang, China.`,
-			zh: `在 <a href="https://www.deepseek.com/">DeepSeek-AI</a> 负责<b>机器学习系统（MLSys）</b>及<b>算子（Kernel）设计与优化</b>。<br />`
-		},
-		link: {
-			en: "https://www.deepseek.com/en/",
-			zh: "https://www.deepseek.com/"
-		}
-	},
-	{
-		title: {
-			en: "Peking University (PKU)",
-			zh: "北京大学"
-		},
-		time: {
-			en: "2021.9 - 2025.7",
-			zh: "2021.9 - 2025.7"
-		},
-		img_path: "/experiences/pku.png",
-		description: {
-			en: `
-            I was a student in the <a href="https://cfcs.pku.edu.cn/english/research/turing_program/introduction1/index.htm">Turing Class</a> at <a href="https://eecs.pku.edu.cn/en/">the School of EECS</a>, <a href="https://english.pku.edu.cn/"><b>Peking University (PKU)</b></a>, enrolled since September 2021. <br />
-            Under the advisement of Prof. <a href="https://xinjin.github.io/index.html">Xin Jin</a>, my research focuses on <b>Machine Learning Systems (MLSys)</b>, <b>Machine Learning Compilers</b>, and <b>Distributed Systems</b>. <br />
-            I was also the <b>team leader</b> of the <a href="https://hpc.pku.edu.cn/pkusc/en/">Peking University Supercomputing Team</a>, and we won the <b>First Place</b> at the 10th ASC and the <b>Second Place</b> at SC23 (both are top-tier Supercomputing competitions in the world).`,
-			zh: `
-            我曾是 2021 级<a href="https://eecs.pku.edu.cn/">北京大学信息科学技术学院</a>的<a href="https://cfcs.pku.edu.cn/english/research/turing_program/introduction1/index.htm">图灵班</a>的学生。<br />
-            我的导师是<a href="https://xinjin.github.io/index.html">金鑫</a>副教授，我的研究方向是<b>机器学习系统（MLSys）</b>、<b>机器学习编译器</b>和<b>分布式系统</b>。<br />
-            我曾作为<a href="https://hpc.pku.edu.cn/pkusc/zh-cn/">北京大学超算队</a>的<b>队长</b>，带队获得第十届 ASC <b>第一名</b>和 SC23 的<b>第二名</b>（均为世界顶级超算竞赛）。`
-		},
-		link: {
-			en: "https://english.pku.edu.cn/",
-			zh: "https://www.pku.edu.cn/"
-		}
-	}
+  {
+    title: { en: 'Tianjin University of Technology', zh: '天津理工大学' },
+    time: { en: '2019.09 - 2023.06', zh: '2019.09 - 2023.06' },
+    img_path: '/experiences/tjut.png',
+    description: {
+      en: 'Bachelor of Electronic Science and Technology.',
+      zh: '电子科学与技术专业本科。',
+    },
+    link: { en: 'https://www.tjut.edu.cn/', zh: 'https://www.tjut.edu.cn/' },
+  },
+  {
+    title: { en: 'Huazhong University of Science and Technology', zh: '华中科技大学' },
+    time: { en: '2024.09 - 2027.06 (expected)', zh: '2024.09 - 2027.06（预计）' },
+    img_path: '/experiences/hust.png',
+    description: {
+      en: 'M.S. in Electronic Science and Technology. Research focus: processor architecture. Ranked in the top 20% of the program.',
+      zh: '电子科学与技术专业硕士在读，研究方向为处理器体系结构，专业排名前 20%。',
+    },
+    link: { en: 'https://www.hust.edu.cn/', zh: 'https://www.hust.edu.cn/' },
+  },
+  {
+    title: { en: 'Beijing Institute of Open Source Chip', zh: '北京开源芯片研究院' },
+    time: { en: '2026.03 - current', zh: '2026.03 - 至今' },
+    img_path: '/experiences/bosc.png',
+    description: {
+      en: 'IC front-end design intern. Working on the second-generation Yanqihu L2 Cache, including microarchitecture, RTL implementation, MSHR miss handling, and Compact CHI coherence interfaces.',
+      zh: 'IC 前端设计实习生，参与第二代雁栖湖 L2 Cache 的微架构设计与 RTL 实现，负责 MSHR 未命中处理和 Compact CHI 一致性接口。',
+    },
+    link: { en: 'https://www.bosc.ac.cn/', zh: 'https://www.bosc.ac.cn/' },
+  },
 ]
 
-export {experiences, type Experience}
+export { experiences, type Experience }

@@ -1,32 +1,28 @@
 export default {
   nav: {
-    name: 'Shengyu Liu',
+    name: 'Zhijie Zhao',
     home: 'Home',
-    publications: 'Publications',
+    experience: 'Experience',
     awards: 'Awards',
     projects: 'Projects',
   },
 
   home: {
-    bio: 'I am currently working at <a href="https://www.deepseek.com/"><b>DeepSeek-AI</b></a> in Hangzhou, Zhejiang, China, focused on <b>Machine Learning Systems (MLSys)</b> and <b>kernel design & optimization</b>.',
+    bio: 'Hello! I am <b>Zhijie Zhao</b>, a master’s student in Electronic Science and Technology at <b>Huazhong University of Science and Technology</b>. My research focuses on <b>processor architecture</b>, and I expect to graduate in June 2027. I am currently an IC front-end design intern at the <b>Beijing Institute of Open Source Chip</b>, working on the second-generation Yanqihu L2 Cache.',
     email: 'Email',
-    googleScholar: 'Google Scholar',
     github: 'GitHub',
     cv: 'My CV',
-    wechat: 'WeChat（微信）',
-    wechatOfficial: 'WeChat Official Account（微信公众号）',
   },
 
   sections: {
     experience: 'Experience',
-    publications: 'Publications',
     awards: 'Awards',
     projects: 'Projects',
-    equalContribution: '*: Equal contribution',
+    equalContribution: '',
   },
 
   footer: {
     builtWith: 'Built on <a href="https://v3.vuejs.org/" target="_blank">Vue 3</a> and <a href="https://vuetifyjs.com/" target="_blank">Vuetify</a>',
-    sourceCode: 'Feel free to steal this website\'s source code at <a href="https://github.com/interestingLSY/interestingLSY.github.io" target="_blank">GitHub</a>',
+    sourceCode: 'Feel free to view this website\'s source code on <a href="https://github.com/Purelikeic/zipZZJ.github.io" target="_blank">GitHub</a>',
   },
 }

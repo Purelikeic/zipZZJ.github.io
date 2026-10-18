@@ -1,11 +1,11 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
-import { awards } from "@/data/awards"
-import { publications } from "@/data/publications"
-import { projects } from "@/data/projects"
-import { experiences } from "@/data/experiences"
+import { awards } from '@/data/awards'
+import { projects } from '@/data/projects'
+import { experiences } from '@/data/experiences'
 
 const { locale } = useI18n()
+const assetPath = (path: string) => import.meta.env.BASE_URL + path
 </script>
 
 <template>
@@ -14,7 +14,7 @@ const { locale } = useI18n()
       <v-row justify="center">
         <div style="width: 80%">
           <v-img
-            src="/photo.jpg"
+            src="/photo-placeholder.svg"
             class="d-none d-md-block w">
           </v-img>
         </div>
@@ -23,7 +23,7 @@ const { locale } = useI18n()
           class="d-md-none"
           style="">
           <v-img
-            src="/photo.jpg">
+            src="/photo-placeholder.svg">
           </v-img>
         </v-avatar>
       </v-row>
@@ -32,20 +32,17 @@ const { locale } = useI18n()
       <v-card variant="text">
         <v-card-item>
           <v-card-title class="pb-2 pt-2">
-            <h2 style="text-align: center;">Shengyu Liu | 刘胜与</h2>
+            <h2 style="text-align: center;">赵志杰 | Zhijie Zhao</h2>
           </v-card-title>
           <v-card-text class="mt-4">
             <p style="margin-top: 14px;" v-html="$t('home.bio')">
             </p>
             <div class="mt-6" style="text-align: center">
               <p style="font-size: 15px;">
-                {{ $t('home.email') }}: <a href="mailto:shengyuliu@deepseek.com">shengyuliu@deepseek.com</a><br />
+                {{ $t('home.email') }}: <a href="mailto:z.zhijie@outlook.com">z.zhijie@outlook.com</a><br />
               </p>
-              <a href="https://scholar.google.com/citations?hl=en&user=tkx4NIUAAAAJ">{{ $t('home.googleScholar') }}</a> /
-              <a href="https://github.com/interestingLSY">GitHub</a> /
-              <a href="/cv-shengyuliu.pdf">{{ $t('home.cv') }}</a> /
-              <a href="/wechat-qrcode.png">{{ $t('home.wechat') }}</a> <br />
-              <a href="/wechat-offical-account-qrcode.jpg">{{ $t('home.wechatOfficial') }}</a>
+              <a href="https://github.com/Purelikeic" target="_blank">{{ $t('home.github') }}</a> /
+              <a :href="assetPath('cv-zhijie-zhao.pdf')" target="_blank">{{ $t('home.cv') }}</a>
             </div>
           </v-card-text>
         </v-card-item>
@@ -54,15 +51,15 @@ const { locale } = useI18n()
   </v-row>
   <v-divider class="mt-10 mb-4"></v-divider>
 
-  <v-card variant="text" class="mt-4" id="card-publications">
+  <v-card variant="text" class="mt-4" id="card-experience">
     <v-card-item>
       <v-card-title>
         <h2 class="card-title">{{ $t('sections.experience') }}</h2>
       </v-card-title>
       <v-card-item>
-        <v-row v-for="experience in experiences" class="mt-4">
+        <v-row v-for="experience in experiences" :key="experience.title.en" class="mt-4">
           <v-col cols="12" md="3" class="d-flex align-center justify-center">
-            <v-img :src="experience.img_path" style="max-width: 280px;"></v-img>
+            <v-img :src="assetPath(experience.img_path)" :alt="experience.title[locale] || experience.title.en" style="max-width: 280px;"></v-img>
           </v-col>
           <v-divider vertical></v-divider>
           <v-col cols="12" md="9">
@@ -71,30 +68,6 @@ const { locale } = useI18n()
             <p v-html="experience.description[locale] || experience.description.en" style="font-size: 16px; color: #555; margin-top: 5px;"></p>
           </v-col>
         </v-row>
-      </v-card-item>
-    </v-card-item>
-  </v-card>
-
-  <v-card variant="text" class="mt-4" id="card-publications">
-    <v-card-item>
-      <v-card-title>
-        <h2 class="card-title">{{ $t('sections.publications') }}</h2>
-      </v-card-title>
-      <v-card-item>
-        <v-row v-for="publication in publications" class="mt-4">
-          <v-col cols="12" md="3">
-            <v-img :src="publication.img_path" style="max-width: 280px; margin-top: 10px"></v-img>
-          </v-col>
-          <v-divider vertical></v-divider>
-          <v-col cols="12" md="9">
-            <a :href="publication.link" target="_blank" v-html="publication.title" style="font-size: 17px"></a>
-            <p v-html="publication.authors" style="font-size: 14px"></p>
-            <p v-html="publication.description[locale] || publication.description.en" style="font-size: 14px; color: #999; margin-top: 5px;"></p>
-            <p v-html="publication.time" style="font-size: 14px; color: #999; margin-top: 5px;"></p>
-            <p v-html="publication.submit_status[locale] || publication.submit_status.en" style="font-size: 14px; color: #555; margin-top: 5px;"></p>
-          </v-col>
-        </v-row>
-        <p style="color: #888; font-size: 14px; margin-top: 20px;">{{ $t('sections.equalContribution') }}</p>
       </v-card-item>
     </v-card-item>
   </v-card>
@@ -126,7 +99,7 @@ const { locale } = useI18n()
         <h2 class="card-title">{{ $t('sections.projects') }}</h2>
       </v-card-title>
       <v-card-text class="mt-3">
-        <v-row v-for="project in projects" class="mt-1">
+        <v-row v-for="project in projects" :key="project.name.en" class="mt-1">
           <v-col>
             <p><a :href="project.link" target="_blank" v-html="project.name[locale] || project.name.en" style="font-size: 17px"></a></p>
             <p v-html="project.description[locale] || project.description.en" style="font-size: 14px; color: #999; margin-top: 2px;"></p>
@@ -141,12 +114,8 @@ const { locale } = useI18n()
   <v-row class="mt-1" justify="center">
     <v-col align-self="center">
       <p style="text-align: center; font-size: 12px; color: #aaa; line-height: 1.5;">
-        <v-icon icon="mdi-xml"></v-icon> with <v-icon icon="mdi-heart"></v-icon> by Shengyu Liu and DeepSeek-V4 <br />
-        <span v-html="$t('footer.builtWith')"></span> <br />
+        <v-icon icon="mdi-xml"></v-icon> with <v-icon icon="mdi-heart"></v-icon> {{ $t('footer.builtWith') }}<br />
         <span v-html="$t('footer.sourceCode')"></span>
-      </p>
-      <p style="text-align: center;" class="mt-2">
-        <a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Finterestinglsy.github.io&count_bg=%2388eeff&title_bg=%23DDDDDD&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=true"/></a>
       </p>
     </v-col>
   </v-row>
