@@ -8,7 +8,7 @@ export default {
   },
 
   home: {
-    bio: 'Hello! I am <b>Zhijie Zhao</b>, currently studying at the <a href="https://www.hust.edu.cn/"><b>School of Integrated Circuits, Huazhong University of Science and Technology</b></a>. My research focuses on <b>processor architecture</b>, and I expect to graduate in June 2027. I am currently an IC front-end design intern at the <a href="https://www.bosc.ac.cn/"><b>Beijing Institute of Open Source Chip</b></a>, working on the second-generation Yanqihu L2 Cache.',
+    bio: 'Hello! I am <b>Zhijie Zhao</b>, currently studying at the <a href="https://www.hust.edu.cn/"><b>School of Integrated Circuits, Huazhong University of Science and Technology</b></a>. My research focuses on <b>processor architecture</b>, and I expect to graduate in June 2027. I am currently an IC front-end design intern at the <a href="https://www.bosc.ac.cn/"><b>Beijing Institute of Open Source Chip</b></a>, responsible for the second-generation Yanqihu L2 Cache design and implementation.',
     email: 'Email',
     github: 'GitHub',
     cv: 'My CV',
