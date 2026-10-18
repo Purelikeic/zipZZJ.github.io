@@ -8,7 +8,7 @@ export default {
   },
 
   home: {
-    bio: '你好，我是赵志杰，目前是<a href="https://www.hust.edu.cn/"><b>华中科技大学电子科学与技术专业硕士研究生</b></a>，研究方向为<b>处理器体系结构</b>，预计于 2027 年 6 月毕业。我关注数字 IC 设计、处理器微架构与 Cache 子系统。目前在<a href="https://www.bosc.ac.cn/"><b>北京开源芯片研究院</b></a>担任 IC 前端设计实习生，参与第二代雁栖湖 L2 Cache 的设计与实现。',
+    bio: '你好，我是赵志杰，目前<a href="https://www.hust.edu.cn/"><b>就读于华中科技大学集成电路学院</b></a>，研究方向为<b>处理器体系结构</b>，预计于 2027 年 6 月毕业。我关注数字 IC 设计、处理器微架构与 Cache 子系统。目前在<a href="https://www.bosc.ac.cn/"><b>北京开源芯片研究院</b></a>担任 IC 前端设计实习生，参与第二代雁栖湖 L2 Cache 的设计与实现。',
     email: '邮箱',
     github: 'GitHub',
     cv: '简历',

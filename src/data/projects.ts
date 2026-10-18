@@ -11,8 +11,8 @@ const projects: Project[] = [
   {
     name: { en: 'One Student One Chip', zh: '一生一芯' },
     description: {
-      en: 'Designed and validated a 32-bit, in-order, single-issue, five-stage RISC-V processor with branch prediction, bypassing, I/D caches, AXI4, FPGA deployment, and RT-Thread support; achieved 3.50 CoreMark/MHz.',
-      zh: '负责 32 位顺序单发射五级流水 RISC-V 处理器及 Cache 子系统设计与 FPGA 验证，实现分支预测、旁路、I/D Cache 和 AXI4 链路，完成 RT-Thread 适配，CoreMark 达到 3.50 CoreMark/MHz。',
+      en: 'An open-source processor-chip teaching and tape-out practice project that connects computer science and electronic engineering through RISC-V, hardware/software co-design, and the full chip-design workflow. I worked on the processor core, cache subsystem, and FPGA validation.',
+      zh: '“一生一芯”是一个以 RISC-V 为载体、贯通计算机科学与电子信息工程的开源处理器芯片教学流片实践项目，覆盖软硬件协同和芯片设计流程。我参与了处理器核心、Cache 子系统和 FPGA 验证工作。',
     },
     time: '2026.03 - 2026.05',
     link: 'https://github.com/Purelikeic/ysyx-workbench',
