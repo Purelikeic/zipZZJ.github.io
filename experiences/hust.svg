@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="150" viewBox="0 0 300 150">
+  <rect width="300" height="150" rx="12" fill="#f6fafb"/>
+  <g fill="none" stroke="#0877b9" stroke-width="7">
+    <path d="M42 62h86M51 62v48m68-48v48M42 110h86M56 50l28-20 28 20"/>
+    <path d="M70 75h44M70 91h44"/>
+  </g>
+  <text x="151" y="70" fill="#0877b9" font-family="Arial,sans-serif" font-size="30" font-weight="700">HUST</text>
+  <text x="151" y="99" fill="#66818e" font-family="sans-serif" font-size="15">华中科技大学</text>
+</svg>

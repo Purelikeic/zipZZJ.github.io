@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="150" viewBox="0 0 300 150">
+  <rect width="300" height="150" rx="12" fill="#f8faf8"/>
+  <g fill="none" stroke="#2e8b68" stroke-width="7">
+    <path d="M47 40h66l-33 35 33 35H47l33-35z"/>
+    <path d="M80 40v70" stroke="#d48b3d"/>
+  </g>
+  <text x="137" y="70" fill="#2e8b68" font-family="Arial,sans-serif" font-size="28" font-weight="700">TJUT</text>
+  <text x="137" y="99" fill="#6f8178" font-family="sans-serif" font-size="15">天津理工大学</text>
+</svg>
