@@ -18,13 +18,13 @@ const awards: Award[] = [
     description: { en: '', zh: '' },
   },
   {
-    year: '2024-2025',
-    name: { en: 'HUST Third-class Scholarship', zh: '华中科技大学三等奖学金' },
+    year: '2026-2027',
+    name: { en: 'HUST Second-class Scholarship', zh: '华中科技大学二等奖学金' },
     description: { en: '', zh: '' },
   },
   {
-    year: 'CET-6',
-    name: { en: 'College English Test - Band 6', zh: '大学英语六级' },
+    year: '2024-2025',
+    name: { en: 'HUST Third-class Scholarship', zh: '华中科技大学三等奖学金' },
     description: { en: '', zh: '' },
   },
 ]
