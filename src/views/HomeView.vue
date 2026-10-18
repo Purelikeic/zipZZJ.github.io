@@ -14,7 +14,7 @@ const assetPath = (path: string) => import.meta.env.BASE_URL + path
       <v-row justify="center">
         <div style="width: 80%">
           <v-img
-            src="/photo-placeholder.svg"
+            :src="assetPath('photo-placeholder.svg')"
             class="d-none d-md-block w">
           </v-img>
         </div>
@@ -23,7 +23,7 @@ const assetPath = (path: string) => import.meta.env.BASE_URL + path
           class="d-md-none"
           style="">
           <v-img
-            src="/photo-placeholder.svg">
+            :src="assetPath('photo-placeholder.svg')">
           </v-img>
         </v-avatar>
       </v-row>
