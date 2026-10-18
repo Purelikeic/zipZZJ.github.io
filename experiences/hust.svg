@@ -1,9 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="300" height="150" viewBox="0 0 300 150">
-  <rect width="300" height="150" rx="12" fill="#f6fafb"/>
-  <g fill="none" stroke="#0877b9" stroke-width="7">
-    <path d="M42 62h86M51 62v48m68-48v48M42 110h86M56 50l28-20 28 20"/>
-    <path d="M70 75h44M70 91h44"/>
-  </g>
-  <text x="151" y="70" fill="#0877b9" font-family="Arial,sans-serif" font-size="30" font-weight="700">HUST</text>
-  <text x="151" y="99" fill="#66818e" font-family="sans-serif" font-size="15">华中科技大学</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="180" viewBox="0 0 180 180" role="img" aria-labelledby="title">
+  <title>华中科技大学标识</title>
+  <circle cx="90" cy="90" r="78" fill="#fff" stroke="#0a4d86" stroke-width="6"/>
+  <circle cx="90" cy="90" r="68" fill="none" stroke="#c91c32" stroke-width="3"/>
+  <path fill="#0a4d86" d="M42 100h96v18H42zM50 92l40-37 40 37H50zm14-2h12V70H64v20zm20 0h12V70H84v20zm20 0h12V70h-12v20z"/>
+  <path fill="#c91c32" d="M51 126h78v8H51zM61 50h58v7H61z"/>
+  <path fill="#0a4d86" d="M52 43c8-12 20-18 38-18s30 6 38 18h-9c-7-7-16-10-29-10s-22 3-29 10h-9z"/>
+  <text x="90" y="153" text-anchor="middle" fill="#0a4d86" font-family="serif" font-size="9" letter-spacing="1">HUST</text>
 </svg>
